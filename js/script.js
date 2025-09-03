@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const miniApp = window.Telegram.WebApp;
+
   const CSS_ANIMATION_DURATION = 200;
 
   const CSS_CLASS_SCREEN_HIDE = "screen-hide";
@@ -146,6 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function webAppClose() {
+    miniApp.close();
     sendMessage("WebAppClose");
   }
 
