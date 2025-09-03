@@ -20,9 +20,6 @@
 
   --copy-icon-url: url("https://avatars.mds.yandex.net/get-lpc/16904900/04bb5583-2aea-4b63-ae77-ee133f0cd6c8/orig?width=24&height=24");
 
-  --back-btn-bg-color: #000;
-  --back-btn-font-color: #fff;
-
   --copy-label-bg-color: #25252c;
   --copy-label-font-color: #fff;
   --copy-label-font-color-error: #ff7e7e;
@@ -67,8 +64,6 @@
 
     --copy-icon-url: url("https://avatars.mds.yandex.net/get-lpc/17800094/997175a0-8d62-42ab-b76b-ffdf42e479a5/orig?width=24&height=24");
 
-    --back-btn-bg-color: #fff;
-    --back-btn-font-color: #000;
     --copy-label-bg-color: #fff;
     --copy-label-font-color: #25252c;
     --copy-label-font-color-error: #ff7e7e;
@@ -531,12 +526,17 @@ a {
 .back-btn {
   position: fixed;
   z-index: 200;
-  top: 10rem;
-  left: 10rem;
-  background-color: var(--back-btn-bg-color);
-  color: var(--back-btn-font-color);
-  padding: 8rem;
-  font-size: 12rem;
+  top: 12rem;
+  left: 8rem;
+
+  width: 34rem;
+  height: 34rem;
+
+  background-image: url("https://avatars.mds.yandex.net/get-lpc/9736426/475af75b-21ac-481f-bfc3-4eba5cb18091/orig?width=36&height=36");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 34rem;
+
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
