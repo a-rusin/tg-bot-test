@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const isIframe = window.parent != null && window != window.parent;
 
+  postEvent("web_app_expand", {});
+
   const CSS_ANIMATION_DURATION = 200;
 
   const CSS_CLASS_SCREEN_HIDE = "screen-hide";
