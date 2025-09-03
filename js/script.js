@@ -169,12 +169,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.TelegramWebviewProxy !== undefined) {
       TelegramWebviewProxy.postEvent(eventType, JSON.stringify(eventData));
     } else if (window.external && "notify" in window.external) {
-      window.external.notify(JSON.stringify({ eventType: eventType, eventData: eventData }));
+      window.external.notify(JSON.stringify({ eventType, eventData }));
     } else if (isIframe) {
       try {
         const trustedTarget = "https://web.telegram.org";
-        trustedTarget = "*";
-        window.parent.postMessage(JSON.stringify({ eventType: eventType, eventData: eventData }), trustedTarget);
+        window.parent.postMessage(JSON.stringify({ eventType, eventData }), trustedTarget);
       } catch (e) {}
     }
   }
