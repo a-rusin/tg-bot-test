@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бот</title>
+    <link rel="stylesheet" href="./style/fonts.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body class="">
+    <div class="screen-content">
+      <section class="main-screen screen-animation" data-screen-item="main-screen">
+        <div class="container">
+          <div class="main_screen__hero">
+            <h1 class="main_screen__title">Решаю любые задачи</h1>
+            <p class="main_screen__description">для учёбы, работы и&nbsp;творчества</p>
+          </div>
+          <ul class="main_screen__list">
+            <li class="main_screen__list-item feature" data-feature-item="generate-text">
+              <div class="feature__icon feature__icon_text"></div>
+              <div class="feature__text-content">
+                <h3 class="feature__title">Пришлите голосовое или&nbsp;напишите запрос</h3>
+                <p class="feature__description">Сгенерирую тексты и&nbsp;идеи, найду информацию</p>
+              </div>
+              <div class="feature__arrow-icon"></div>
+            </li>
+            <li class="main_screen__list-item feature" data-feature-item="generate-images">
+              <div class="feature__icon feature__icon_image-create"></div>
+              <div class="feature__text-content">
+                <h3 class="feature__title">Создавайте картинки</h3>
+                <p class="feature__description">Сгенерирую изображения в&nbsp;разных форматах и&nbsp;стилях</p>
+              </div>
+              <div class="feature__arrow-icon"></div>
+            </li>
+            <li class="main_screen__list-item feature" data-feature-item="analyze-text">
+              <div class="feature__icon feature__icon_doc"></div>
+              <div class="feature__text-content">
+                <h3 class="feature__title">Прикрепите документ, таблицу или презентацию</h3>
+                <p class="feature__description">Изучу содержимое, отвечу на&nbsp;вопросы</p>
+              </div>
+              <div class="feature__arrow-icon"></div>
+            </li>
+            <li class="main_screen__list-item feature" data-feature-item="describe-image">
+              <div class="feature__icon feature__icon_photo"></div>
+              <div class="feature__text-content">
+                <h3 class="feature__title">Отправьте фото или скриншот</h3>
+                <p class="feature__description">Распознаю объекты и&nbsp;расскажу о&nbsp;них</p>
+              </div>
+              <div class="feature__arrow-icon"></div>
+            </li>
+
+            <li class="main_screen__list-item feature" data-feature-item="reason-mode">
+              <div class="feature__icon feature__icon_to-reason"></div>
+              <div class="feature__text-content">
+                <h3 class="feature__title">Используйте режим &laquo;Рассуждать&raquo;</h3>
+                <p class="feature__description">Решу сложную комплексную задачу с&nbsp;несколькими условиями</p>
+              </div>
+              <div class="feature__arrow-icon"></div>
+            </li>
+          </ul>
+          <ul class="main-screen__footer">
+            <li>
+              <div class="main-screen__footer-item">
+                <a href="https://yandex.ru/legal/alice_termsofuse/ru/" class="main-screen__footer-url"
+                  >Лицензионное соглашение</a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="main-screen__footer-item">
+                <a href="https://alice.yandex.ru/support/ru/assistant/" class="main-screen__footer-url">Справка</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feature-screen screen-animation screen-hide" data-screen-item="generate-text">
+        <img
+          src="https://avatars.mds.yandex.net/get-lpc/9736426/32cee2f6-3023-4c94-80fd-92cc8e20a13d/orig?width=1179&height=921"
+          alt="Картинка"
+          class="feature-screen__hero-image"
+        />
+        <div class="container">
+          <div class="feature-screen__hero">
+            <h2 class="feature-screen__hero-title">Пришлите голосовое или&nbsp;напишите запрос</h2>
+            <p class="feature-screen__hero-description">
+              Я&nbsp;сгенерирую текст эссе или письма, соберу информацию из&nbsp;разных источников в&nbsp;интернете,
+              объясню сложную тему простыми словами
+            </p>
+          </div>
+          <ul class="feature-screen__cmd-list">
+            <li class="cmd-item">
+              <p class="cmd-item__text">Напиши поздравление друга с&nbsp;днём рождения, в&nbsp;юмористическом стиле</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+            <li class="cmd-item">
+              <p class="cmd-item__text">Составь короткий и&nbsp;цепляющий пост про котиков для соцсетей</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+            <li class="cmd-item">
+              <p class="cmd-item__text">Спланируй поездку по&nbsp;Карелии на&nbsp;5&nbsp;дней</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feature-screen screen-animation screen-hide" data-screen-item="generate-images">
+        <img
+          src="https://avatars.mds.yandex.net/get-lpc/12373972/a059a14b-31a5-4118-b9e7-2c1a7d659374/orig?width=1179&height=921"
+          alt="Картинка"
+          class="feature-screen__hero-image"
+        />
+        <div class="container">
+          <div class="feature-screen__hero">
+            <h2 class="feature-screen__hero-title">Создавайте картинки</h2>
+            <p class="feature-screen__hero-description">
+              Нарисую открытку, забавную картинку, иллюстрацию для поста, проекта или презентации
+            </p>
+          </div>
+          <ul class="feature-screen__cmd-list">
+            <li class="cmd-item">
+              <p class="cmd-item__text">Нарисуй иллюстрацию к&nbsp;статье о&nbsp;пользе утренних пробежек</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+            <li class="cmd-item">
+              <p class="cmd-item__text">
+                Делаю презентацию про цифровой маркетинг. Нарисуй обложку: тёмно-синий фон с&nbsp;оранжевыми вставками
+              </p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+            <li class="cmd-item">
+              <p class="cmd-item__text">
+                Нарисуй забавную иллюстрацию с&nbsp;котом-астронавтом, плавающим в&nbsp;невесомости среди ярких планет
+                и&nbsp;звезд
+              </p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feature-screen screen-animation screen-hide" data-screen-item="analyze-text">
+        <img
+          src="https://avatars.mds.yandex.net/get-lpc/12602567/4107211e-7fd2-4a5e-8551-4795f2f060ec/orig?width=1179&height=921"
+          alt="Картинка"
+          class="feature-screen__hero-image"
+        />
+        <div class="container">
+          <div class="feature-screen__hero">
+            <h2 class="feature-screen__hero-title">Прикрепите документ, таблицу или презентацию</h2>
+            <p class="feature-screen__hero-description">
+              Изучу тексты, кратко перескажу, найду нужный фрагмент, переведу на&nbsp;английский и&nbsp;отвечу
+              на&nbsp;вопросы
+            </p>
+          </div>
+          <ul class="feature-screen__cmd-list">
+            <li class="cmd-item">
+              <p class="cmd-item__text">
+                Сделай краткий конспект документа и&nbsp;составь список из&nbsp;основных тезисов
+              </p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+            <li class="cmd-item">
+              <p class="cmd-item__text">Перепиши текст простыми словами</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+            <li class="cmd-item">
+              <p class="cmd-item__text">Переведи документ на&nbsp;русский</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feature-screen screen-animation screen-hide" data-screen-item="describe-image">
+        <img
+          src="https://avatars.mds.yandex.net/get-lpc/12373972/4b04e488-d1c1-4ce1-b504-e1eeefa6b5d2/orig?width=1179&height=921"
+          alt="Картинка"
+          class="feature-screen__hero-image"
+        />
+        <div class="container">
+          <div class="feature-screen__hero">
+            <h2 class="feature-screen__hero-title">Отправьте фото или скриншот</h2>
+            <p class="feature-screen__hero-description">
+              Я&nbsp;опишу объекты, которые вижу на&nbsp;изображении, и&nbsp;отвечу на&nbsp;вопросы
+            </p>
+          </div>
+          <ul class="feature-screen__cmd-list">
+            <li class="cmd-item">
+              <p class="cmd-item__text">Где это место на&nbsp;фото?</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+            <li class="cmd-item">
+              <p class="cmd-item__text">Переведи текст скриншота на&nbsp;русский</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+            <li class="cmd-item">
+              <p class="cmd-item__text">Что за&nbsp;порода собаки?</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feature-screen screen-animation screen-hide" data-screen-item="reason-mode">
+        <img
+          src="https://avatars.mds.yandex.net/get-lpc/9736426/ef23d7e8-ee7d-4de1-8c5a-29f78d2712ae/orig?width=1179&height=921"
+          alt="Картинка"
+          class="feature-screen__hero-image"
+        />
+        <div class="container">
+          <div class="feature-screen__hero">
+            <h2 class="feature-screen__hero-title">Используйте режим &laquo;Рассуждать&raquo;</h2>
+            <p class="feature-screen__hero-description">
+              Дам взвешенное решение на&nbsp;основе анализа экспертного уровня и&nbsp;объясню логику ответа
+            </p>
+          </div>
+          <ul class="feature-screen__cmd-list">
+            <li class="cmd-item">
+              <p class="cmd-item__text">Предложи план поездки по&nbsp;Камчатке летом на&nbsp;10&nbsp;дней</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+            <li class="cmd-item">
+              <p class="cmd-item__text">Что говорят эксперты о&nbsp;климатических изменениях?</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+            <li class="cmd-item">
+              <p class="cmd-item__text">Как квантовые компьютеры изменят криптографию и&nbsp;финансовые системы?</p>
+              <div class="cmd-item__copy-icon"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="fixed-btn">
+      <div class="fixed-btn__wrapper">
+        <div class="fixed-btn__btn">Попробовать</div>
+      </div>
+    </div>
+    <div class="copy-label">
+      <div class="copy-label__wrapper">
+        <div class="copy-label__text copy-label__text_success" style="display: block">Скопировано</div>
+        <div class="copy-label__text copy-label__text_error" style="display: none">Ошибка</div>
+      </div>
+    </div>
+    <div class="back-btn">BACK</div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff2") format("woff2"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff2") format("woff2"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "YS Geo";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-geo-regular.woff2") format("woff2"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-geo-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "YS Geo";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-geo-medium.woff2") format("woff2"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-geo-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
