@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const miniApp = window.Telegram.WebApp;
+  const isIframe = window.parent != null && window != window.parent;
 
   const CSS_ANIMATION_DURATION = 200;
 
@@ -148,12 +148,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function webAppClose() {
-    miniApp.close();
-    sendMessage("WebAppClose");
+    postEvent("web_app_close", {});
   }
 
   function webAppSetupBackButton(isVisible) {
-    // sendMessage("WebAppSetupBackButton", { isVisible });
     if (isVisible) {
       backBtn.classList.add("active");
     } else {
@@ -162,21 +160,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function webAppOpenLink(url) {
-    sendMessage("WebAppOpenLink", { url });
+    postEvent("web_app_open_link", { url });
   }
 
-  function sendMessage(eventType, options) {
-    // if (window.WebViewHandler) {
-    //   window.WebViewHandler.postEvent(eventType, JSON.stringify(options));
-    //   return;
-    // } else {
-    //   window.parent.postMessage(JSON.stringify({ type: eventType, ...options }), "https://web.max.ru");
-    // }
-  }
+  function postEvent(eventType, eventData) {
+    console.log("[Telegram.WebView] > postEvent", eventType, eventData);
 
-  // window.addEventListener("message", function (event) {
-  //   if (event.origin === "https://web.max.ru" && event.data && event.data === '{"type":"WebAppBackButtonPressed"}') {
-  //     backBtnHandler();
-  //   }
-  // });
+    if (window.TelegramWebviewProxy !== undefined) {
+      TelegramWebviewProxy.postEvent(eventType, JSON.stringify(eventData));
+    } else if (window.external && "notify" in window.external) {
+      window.external.notify(JSON.stringify({ eventType: eventType, eventData: eventData }));
+    } else if (isIframe) {
+      try {
+        const trustedTarget = "https://web.telegram.org";
+        trustedTarget = "*";
+        window.parent.postMessage(JSON.stringify({ eventType: eventType, eventData: eventData }), trustedTarget);
+      } catch (e) {}
+    }
+  }
 });
